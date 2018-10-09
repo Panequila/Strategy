@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Class Building">
+  <ClassDiagramComponents>
+    <Class name="Buildings" package="" visibility="public" xPosition="490.0" yPosition="68.0">
+      <Fields>
+        <Field name="x" type="Double" visibility="private"/>
+        <Field name="y" type="Double" visibility="private"/>
+        <Field name="Health" type="int" visibility="private"/>
+        <Field name="damage" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Collapse" returnType="void" visibility="public"/>
+        <Method name="Attack" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Tower" package="" visibility="public" xPosition="226.0" yPosition="338.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Barracks" package="" visibility="public" xPosition="740.0" yPosition="338.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="spawn" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Wall" package="" visibility="public" xPosition="490.0" yPosition="404.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Nexus " package="" visibility="public" xPosition="118.0" yPosition="113.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Fulldestruction" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Tower" target="Buildings"/>
+    <IsRelation name="is" source="Nexus " target="Buildings"/>
+    <IsRelation name="is" source="Barracks" target="Buildings"/>
+    <IsRelation name="is" source="Wall" target="Buildings"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

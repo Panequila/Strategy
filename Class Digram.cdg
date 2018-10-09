@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Class Digram">
+  <ClassDiagramComponents>
+    <Class name="Unit" package="" visibility="public" xPosition="512.0" yPosition="36.0">
+      <Fields>
+        <Field name="x" type="Double" visibility="private"/>
+        <Field name="y" type="Double" visibility="private"/>
+        <Field name="Health" type="Int" visibility="private"/>
+        <Field name="Speed" type="Int" visibility="private"/>
+        <Field name="Damage" type="Int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="move" returnType="void" visibility="public"/>
+        <Method name="attack" returnType="void" visibility="public"/>
+        <Method name="stop" returnType="void" visibility="public"/>
+        <Method name="death" returnType="void" visibility="public"/>
+        <Method name="display" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Knight" package="" visibility="public" xPosition="575.0" yPosition="456.0">
+      <Fields>
+        <Field name="Horse" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Archer" package="" visibility="public" xPosition="782.0" yPosition="466.0">
+      <Fields>
+        <Field name="Arrow" type="Object" visibility="private"/>
+        <Field name="Bow" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Horse" package="" visibility="public" xPosition="388.0" yPosition="456.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="       Wizard " package="" visibility="public" xPosition="124.0" yPosition="296.0">
+      <Fields>
+        <Field name="mana" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="freeze" returnType="void" visibility="public"/>
+        <Method name="RegenerateMana" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Dragon" package="" visibility="public" xPosition="124.0" yPosition="69.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="firetheball" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Soldier " package="" visibility="public" xPosition="1166.0" yPosition="456.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Arrow" package="" visibility="public" xPosition="782.0" yPosition="638.0">
+      <Fields>
+        <Field name="Type" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="power" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Armored Soldier" package="" visibility="public" xPosition="972.0" yPosition="466.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Armored Knight" package="" visibility="public" xPosition="1349.0" yPosition="510.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="MaceMan" package="" visibility="public" xPosition="1074.0" yPosition="256.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="spin" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Healer" package="" visibility="public" xPosition="124.0" yPosition="181.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="heal" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Dragon" target="Unit"/>
+    <IsRelation name="is" source="       Wizard " target="Unit"/>
+    <IsRelation name="is" source="MaceMan" target="Unit"/>
+    <IsRelation name="is" source="Soldier " target="Unit"/>
+    <IsRelation name="is" source="Armored Soldier" target="Unit"/>
+    <HasRelation name="no3 el drba " source="Archer" target="Arrow" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Knight" target="Unit"/>
+    <IsRelation name="is" source="Archer" target="Unit"/>
+    <HasRelation name="rakbo" source="Knight" target="Horse" type="Aggregation" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Armored Knight" target="Unit"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
